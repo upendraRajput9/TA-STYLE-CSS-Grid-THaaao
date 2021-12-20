@@ -1,0 +1,623 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* general classes */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.space-btm {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.width50 {
+  width: 50%;
+  text-align: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  color: var(---Secondary);
+  background-color: var(---Primary);
+}
+
+img {
+  width: 100%;
+}
+
+/* flex */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.flex-45 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.flex-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+header {
+  background-color: #f5e3d6;
+}
+
+header h2 {
+  padding-bottom: 1rem;
+}
+
+header #toggle {
+  display: none;
+}
+
+header .bar {
+  display: none;
+}
+
+header nav {
+  padding-top: 1rem;
+}
+
+header nav .home {
+  color: #ecae4e;
+}
+
+header nav a {
+  color: #a19b94;
+}
+
+header nav a:hover {
+  color: #ecae4e;
+}
+
+header figure {
+  background-image: url(./assets/media/home-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -8vw;
+}
+
+header figure h1 {
+  font-size: 1.5rem;
+  padding: 2rem;
+  padding-left: 10rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px white;
+}
+
+header section {
+  padding: 10rem 3rem;
+}
+
+header section button {
+  border: 0.3rem solid black;
+  background-color: transparent;
+  font-weight: 300;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+}
+
+header span {
+  font-size: 2.5rem;
+  font-weight: 275;
+}
+
+header span b {
+  font-weight: 400;
+}
+
+header h2 {
+  color: #c6bdb5;
+}
+
+header p {
+  padding: 1rem 0;
+  line-height: 2rem;
+  color: #c6bdb5;
+}
+
+.parent2 .iteam {
+  padding: 2rem 1rem;
+}
+
+.parent2 .iteam h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1.5rem 0;
+  color: black;
+}
+
+.parent2 .iteam1 {
+  background-color: white;
+}
+
+.parent2 .iteam1 span {
+  color: #ecae4e;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.parent2 .iteam1 p {
+  color: #c6bdb5;
+  padding: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.parent2 .iteam2 {
+  background-image: url(./assets/media/about-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -8vw;
+}
+
+.parent2 .iteam {
+  color: white;
+}
+
+.parent2 .iteam i {
+  font-size: 2rem;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.parent2 .iteam h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.parent2 .iteam p {
+  font-weight: 300;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.parent2 .iteam3 {
+  background-color: #ecae4e;
+}
+
+.parent2 .iteam3 .parent-tube {
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.parent2 .iteam3 .child-tube {
+  background-color: black;
+  border-radius: 1rem 0 0 1rem;
+  height: 5px;
+}
+
+.parent2 .iteam4 {
+  background-color: #ecae4e;
+}
+
+.parent2 .iteam5 {
+  background-color: #fb673e;
+}
+
+.parent2 .iteam6 {
+  background-color: black;
+}
+
+.parent2 .iteam7 {
+  color: black;
+}
+
+.parent2 .iteam7 i {
+  color: black;
+}
+
+.education2 {
+  background-color: #fb673e;
+}
+
+.education1 {
+  background-image: url(./assets/media/experience-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.education3 {
+  background-color: #ecae4e;
+}
+
+.education4 {
+  background-image: url(./assets/media/education-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.education {
+  color: white;
+  padding: 1.5rem;
+}
+
+.education h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.education p {
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.education article {
+  padding: 1rem 0;
+}
+
+.education article h3 {
+  font-size: 1.5rem;
+}
+
+.education article div {
+  padding: 0 1rem;
+}
+
+.education small {
+  color: black;
+  font-size: 1rem;
+}
+
+.education i {
+  font-size: 2rem;
+  color: white;
+}
+
+.parent3 {
+  color: white;
+}
+
+.parent3 h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.parent3 p {
+  font-weight: 200;
+  padding: 1rem 0;
+}
+
+.parent3 form {
+  background-color: transparent;
+  padding: 2rem 0;
+}
+
+.parent3 form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ecae4e;
+  height: 4rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.parent3 form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.parent3 form input:-ms-input-placeholder {
+  color: white;
+}
+
+.parent3 form input::-ms-input-placeholder {
+  color: white;
+}
+
+.parent3 form input::placeholder {
+  color: white;
+}
+
+.parent3 form textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ecae4e;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.parent3 form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.parent3 form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.parent3 form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.parent3 form textarea::placeholder {
+  color: white;
+}
+
+.parent3 form button {
+  background-color: white;
+  border: none;
+  padding: 1rem 8rem;
+  color: #959595;
+  border-radius: 2rem;
+}
+
+.contact1 {
+  padding: 2rem;
+  background-color: #fb673e;
+}
+
+.contact2 {
+  background-image: url(./assets/media/contact-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -20vw;
+}
+
+.contact3 {
+  background-color: black;
+  color: lightgray;
+  padding: 2rem;
+}
+
+.contact3 h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.contact3 address {
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #626262;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.contact3 small {
+  color: #795d35;
+  font-weight: 200;
+  padding-left: 1rem;
+}
+
+.contact3 i {
+  color: #929292;
+}
+
+.contact3 li {
+  padding: 1rem 0;
+}
+
+.map {
+  background-color: #fb673e;
+  padding: 2rem 0;
+}
+
+.map figure {
+  width: 70%;
+  -webkit-box-shadow: 1px 1px 20px  black;
+          box-shadow: 1px 1px 20px  black;
+}
+
+footer {
+  padding: 6rem 0;
+}
+
+footer address {
+  padding: 3rem 0;
+  color: #505050;
+}
+
+footer b {
+  color: burlywood;
+}
+
+footer i {
+  color: #727272;
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 10px;
+  }
+  .parent {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header-img {
+    height: 70vh;
+  }
+  .iteam2 {
+    height: 50vh;
+  }
+  .education1 {
+    height: 50vh;
+  }
+  .education4 {
+    height: 50vh;
+  }
+  .form-figure {
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    background-position-x: 0vmax;
+    background-color: black;
+  }
+  header h1 {
+    position: fixed;
+    z-index: 99;
+  }
+  header .nav {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 10rem;
+  }
+  header .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 70vh;
+  }
+  header .bar {
+    display: block;
+    position: fixed;
+    right: 0;
+    padding-top: 1.5rem;
+    padding-right: 4rem;
+    top: 0;
+    z-index: 99;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px white;
+  }
+  header #toggle:checked ~ .nav {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
