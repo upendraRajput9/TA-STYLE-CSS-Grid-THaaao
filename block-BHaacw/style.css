@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* variables */
+.root{
+    --Primary:rgb(89,191,194);
+    --Secondary: white;
+    --text-dark:rgb(40,62,125);
+    --bg-light:rgb(213,229,229);
+    --text-light:rgb(110,113,120);
+}
+/* general classes */
+.center{
+    text-align: center;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.padding{
+    padding: 1rem;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.btn{
+    display: inline-block;
+    padding: 16px;
+    color: var(---Secondary);
+    background-color: var(---Primary);
+}
+.text-center{
+    text-align: center;
+
+}
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.justify-end{
+    justify-content: end;
+}
+
+.display-flex{
+    display: flex;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+/* custom */
+
+body{
+    background-color: rgb(57,74,78);
+}
+h1{
+    font-size: 3rem;
+    padding: 2rem 0;
+    font-weight: 700;
+    color: white;
+}
+ul{
+    justify-content: space-around;
+}
+nav{
+    
+    color: rgb(0,149,190);
+    background-color: white;
+    border-top: 0.3rem solid rgb(0,149,190);
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding: 1rem 0;
+margin-bottom: 2rem;
+}
+
+.item{
+    background-color: white;
+    
+}
+h2{
+    padding: 1rem;
+}
+p{
+    padding: 0 1rem;
+}
+figure{
+    padding: 0 1rem;
+}
+small{
+    padding: 0 1rem ;
+}
+.parent{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+}
+
+.iteam4 h2{
+    background-color: red;
+    
+}
+
+.iteam5 small{
+    background-color: rgb(0,149,190);
+   
+}
+.iteam2{
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 4;
+}
+.iteam3{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+}
+img{
+    width: 100%;
+}
+.cat img{
+width: 100%;
+border-radius: 50%;
+
+}
+small{
+    color: red;
+}
+.graph{
+width: 80%;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+ @media screen and (max-width:768px) {
+    .container{
+        max-width: 755px;
+    }
+    html{
+        font-size: 10px;
+    }
+    
+    .parent{
+        grid-template-columns: repeat(2, 1fr) ;
+       
+    }
+
+} 
+@media screen and (max-width:468px) {
+    .container{
+        max-width: 450px;
+    }
+    html{
+        font-size: 9px;
+    }
+    
+    .parent{
+        display: flex;
+    flex-direction: column;
+    }
+}
