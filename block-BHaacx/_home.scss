@@ -1,0 +1,307 @@
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+header{
+background-color: $secondary;
+h2{
+    padding-bottom: 1rem;
+}
+#toggle{
+    display: none;
+}
+.bar{
+    display: none;
+}
+nav{
+    padding-top: 1rem;
+    .home{
+        color: $third;
+    }
+    a{
+        color: rgb(161, 155, 148);
+       &:hover{
+           color: $third;
+       } 
+    }
+}
+figure{
+    background-image: url(./assets/media/home-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -8vw;
+   h1{
+       font-size: 1.5rem;
+       padding: 2rem ;
+       padding-left: 10rem;
+       font-weight: 700;
+       text-shadow: 2px 2px 2px white;
+   }
+}
+section{
+    padding: 10rem 3rem;
+    button{
+        border: 0.3rem solid black;
+        background-color: transparent;
+        font-weight: 300;
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        margin: 2rem 0;
+    }
+}
+span{
+    font-size: 2.5rem;
+    font-weight: 275;
+    
+    b{
+        font-weight: 400;
+    }
+}
+h2{
+color: $text-color;
+}
+p{
+    padding: 1rem 0;
+    line-height: 2rem;
+    color: $text-color;
+}
+
+}
+
+.parent2{
+    
+
+.iteam{
+    padding: 2rem 1rem;
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1.5rem 0;
+    color: black;
+}
+
+}
+
+
+.iteam1{
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    background-color: white;
+    span{
+        color: $third;
+        font-size: 1.2rem;
+        font-weight: 300;
+        
+    }
+    p{
+        color: $text-color;
+        padding: 1.5rem 0;
+        line-height: 1.5;
+    }
+}
+.iteam2{
+    background-image: url(./assets/media/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -8vw;
+}
+.iteam{
+    color: white;
+    i{
+        font-size: 2rem;
+        color: white;
+        padding: 1.5rem 0;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+p{
+    font-weight: 300;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+}
+.iteam3{
+    background-color: $third;
+    .parent-tube{
+       border-radius: 1rem;
+        background-color: white;
+    }
+    .child-tube{
+        background-color: black;
+        border-radius: 1rem 0 0 1rem;
+        height: 5px;
+    }
+}
+.iteam4{
+    background-color: $third;
+}
+.iteam5{
+    background-color: $primary;
+}
+.iteam6{
+    background-color: black;
+}
+.iteam7{
+    color: black;
+    i{
+        color: black;
+    }
+}
+}
+.education2{
+    background-color: $primary;
+}
+.education1{
+    background-image: url(./assets/media/experience-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.education3{
+    background-color: $third;
+}
+.education4{
+    background-image: url(./assets/media/education-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.education{
+    color: white;
+    padding: 1.5rem;
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+p{
+    padding: 1rem 0;
+    font-weight: 300;
+}
+article{
+    padding: 1rem 0;
+    h3{
+        font-size: 1.5rem;
+    }
+    div{
+        padding: 0 1rem;
+    }
+}
+small{
+    color: black;
+    font-size: 1rem;
+}
+i{
+    font-size: 2rem;
+    color: white;
+}
+}
+.parent3{
+    color: white;
+    h2{
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    p{
+        font-weight: 200;
+        padding: 1rem 0;
+    }
+    form{
+        background-color: transparent;
+        padding: 2rem 0;
+        input{
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid $third;
+            height: 4rem;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 100;
+            &::placeholder{
+                color: white;
+            }
+        }
+        textarea{
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid $third;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            color: white;
+                font-size: 1.3rem;
+                font-weight: 100;
+            &::placeholder{
+                color: white;
+            }
+        }
+        button{
+            background-color: white;
+            border: none;
+            padding: 1rem 8rem;
+            color: rgb(149, 149, 149);
+            border-radius: 2rem;
+            
+        }
+    }
+}
+.contact1{
+    
+    padding: 2rem;
+    background-color: $primary;
+}
+.contact2{
+    background-image: url(./assets/media/contact-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20vw;
+}
+.contact3{
+    background-color: black;
+    color: rgb(211, 211, 211);
+    padding: 2rem;
+    h2{
+        font-size: 1.8rem;
+        font-weight: 200;
+    }
+    address{
+        font-size: 1.1rem;
+        font-weight: 100;
+        color: rgb(98, 98, 98);
+        padding: 1rem 0;
+        line-height: 2;
+    }
+    small{
+        color: rgb(121, 93, 53);
+        font-weight: 200;
+        padding-left: 1rem;
+    }
+    i{
+        color: rgb(146, 146, 146);
+    }
+    li{
+        padding: 1rem 0;
+    }
+}
+
+.map{
+    background-color: $primary;
+    padding: 2rem 0;
+    figure{
+        width: 70%;
+        box-shadow: 1px 1px 20px  black;
+    }
+}
+
+footer{
+    padding: 6rem 0;
+    address{
+        padding: 3rem 0;
+        color: rgb(80, 80, 80);
+    }
+    b{
+        color: burlywood;
+    }
+    i{
+        color: rgb(114, 114, 114);
+    }
+}

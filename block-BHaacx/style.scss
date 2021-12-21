@@ -1,0 +1,90 @@
+@import"reset";
+@import"general";
+@import"var";
+@import"home";
+
+
+@media screen and (max-width:760px) {
+    html{
+        font-size: 10px;
+    }
+    .parent{
+        grid-template-columns: 1fr;
+       
+    }
+    .header-img{
+        height: 70vh;
+        
+    }
+    .iteam2{
+       height: 50vh;
+    }
+    .education1{
+        height: 50vh;
+    }
+    .education4{
+        height: 50vh;
+    }
+    .form-figure{
+        background-size: cover;
+        height: 60vh;
+       width: 100%;
+       background-position-x: 0vmax;
+       background-color: black;
+    }
+ header{
+     h1{
+position: fixed;
+z-index: 99;
+     }
+    //  ul{
+    //      top: 0;
+    //      position: fixed;
+    //      left: 0;
+    //      right: 0;
+    //      background-color: $secondary;
+    //      padding: 2rem 0;
+    //  }
+ }
+
+
+//  toggle
+header{
+
+
+.nav{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 10rem;
+    ul{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+    }
+ 
+}
+
+.bar{
+    display: block;
+    position: fixed;
+    right: 0;
+    padding-top: 1.5rem;
+    padding-right: 4rem;
+    top: 0;
+  z-index: 99;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px white;
+        }
+
+#toggle:checked~.nav{
+    display: block;
+
+}
+}
+    }
+
